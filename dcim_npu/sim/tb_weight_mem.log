@@ -1,0 +1,12 @@
+== tb_weight_mem ==
+[T1] bulk clear
+[T2] program + readback, all 512 words
+[T3] boundary elements
+[T4] signed extremes: -128 and +127
+[T5] write protection while locked
+[T6] unlocked write after lock release
+[T7] 2000 random word writes
+---------------------------------------------
+PASS  7082 checks, 0 errors
+---------------------------------------------
+tb/tb_weight_mem.v:238: $finish called at 62091000 (1ps)

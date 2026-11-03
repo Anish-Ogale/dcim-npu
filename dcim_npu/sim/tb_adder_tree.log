@@ -1,0 +1,14 @@
+== tb_adder_tree ==
+[T1] all zero
+[T2] all +127  (expected +8128)
+     sum = 8128
+[T3] all -128  (expected -8192)
+     sum = -8192
+[T4] alternating +127 / -128
+[T5] 63 x +127 and one -128
+[T6] 63 x -128 and one +127
+[T7] 2000 random vectors
+---------------------------------------------
+PASS  2006 checks, 0 errors
+---------------------------------------------
+tb/tb_adder_tree.v:173: $finish called at 2006000 (1ps)

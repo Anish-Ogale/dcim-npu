@@ -1,0 +1,15 @@
+== tb_cim_array ==
+[T1] single active element W[0][0]
+[T2] all-zero activation plane
+[T3] all weights +127, all rows active (expect 8128)
+     P[0] = 8128
+[T4] all weights -128, all rows active (expect -8192)
+     P[0] = -8192
+[T5] W[i][j] = j+1 for all i, all rows active
+[T6] row 5 deactivated, W[5][j] = -128
+[T7] alternating +127 / -128 weights
+[T8] 200 random weight and activation vectors
+---------------------------------------------
+PASS  13248 checks, 0 errors
+---------------------------------------------
+tb/tb_cim_array.v:207: $finish called at 207000 (1ps)
